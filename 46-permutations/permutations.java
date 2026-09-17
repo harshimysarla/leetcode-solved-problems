@@ -16,9 +16,7 @@ class Solution {
 
             used[i] = true;
             list.add(nums[i]);
-
             backtrack(nums, list, result, used);
-
             list.remove(list.size() - 1);
             used[i] = false;
         }
